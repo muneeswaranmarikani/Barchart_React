@@ -65,7 +65,7 @@
     position: relative;
     border-left: 2px solid #fff;
     border-bottom: 2px solid #fff;
-    padding-left: 50px; /* Added padding to account for y-axis labels */
+    padding-left: 50px;
   }
   
   .bar {
