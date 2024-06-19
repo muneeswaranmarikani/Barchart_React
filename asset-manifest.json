@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Barchart_React/static/css/main.a913973c.css",
+    "main.js": "/Barchart_React/static/js/main.23b01b13.js",
+    "index.html": "/Barchart_React/index.html",
+    "main.a913973c.css.map": "/Barchart_React/static/css/main.a913973c.css.map",
+    "main.23b01b13.js.map": "/Barchart_React/static/js/main.23b01b13.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a913973c.css",
+    "static/js/main.23b01b13.js"
+  ]
+}
