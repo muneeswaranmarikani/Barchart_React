@@ -1,124 +1,113 @@
-*{
-    background-color: black;
+* {
+  background-color: black;
 }
 
 .rating-container {
-    text-align: center;
-    padding: 20px;
-    color: #fff;
-    font-family: sans-serif;
-  }
-  
-  .title {
-    color: #fff;
-    margin-bottom: 20px;
-  }
-  
-  .chart-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .y-axis-label {
-    position: absolute;
-    left: 15%;
-    top: 50%;
-    transform: translateY(-50%) rotate(-90deg);
-    transform-origin: left top;
-    color: white;
-    font-weight: bold;
-  }
-  
-  .y-axis-values {
-    position: absolute;
-    left: -30px;
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    color: white;
-    font-weight: bold;
-  }
-  
-  .y-axis-value {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
-  .x-axis-label {
-    margin-top: 10px;
-    font-weight: bold;
-    color: white;
-  }
-  
-  .bar-chart {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    height: 300px;
-    width: 50%;
-    margin: 20px 0;
-    position: relative;
-    border-left: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    padding-left: 50px; /* Added padding to account for y-axis labels */
-  }
-  
-  .bar {
-    width: 10%;
-    background-color: blue;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 5px;
-    box-sizing: border-box;
-    position: relative;
-  }
-  
-  .bar::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-  
-    
-  .regenerate-button {
-    position: absolute;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: black;
-    color: green;
-    border: 1px solid green;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-    right: 25%;
-  }
-  
-  .regenerate-button:hover {
-    background-color: #005f5f;
-  }
-  
-  .x-axis-values {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-  }
-  
-  .x-axis-value {
-    flex: 1;
-    text-align: center;
-    color: white;
-  }
-  
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.title {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.y-axis-label {
+  position: absolute;
+  left: 18%;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left top;
+  color: white;
+  font-weight: bold;
+}
+
+.y-axis-values {
+  position: absolute;
+  left: -30px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  color: white;
+  font-weight: bold;
+}
+
+.y-axis-value {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.x-axis-label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.bar-chart {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 300px;
+  width: 50%;
+  margin: 20px 0;
+  position: relative;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding-left: 50px; 
+}
+
+.bar {
+  width: 10%;
+  background-color: blue;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-sizing: border-box;
+  position: relative;
+  transition: height 1s ease;
+}
+
+.regenerate-button {
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+  color: green;
+  border: 1px solid green;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  right: 25%;
+}
+
+.regenerate-button:hover {
+  background-color: #005f5f;
+}
+
+.x-axis-values {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.x-axis-value {
+  flex: 1;
+  text-align: center;
+  color: white;
+}

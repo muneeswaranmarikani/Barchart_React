@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import './Rating_component.css';
 
-const generatedRatings = [35, 50, 40, 22, 10];
 const xAxis = [1, 2, 3, 4, 5];
-const yAxis = [50, 40, 30, 20, 10]; 
+const yAxis = [50, 40, 30, 20, 10];
+
+const randomRatings = () => {
+  return Array.from({ length: 5 }, () => Math.floor(Math.random() * 51));
+};
 
 const RatingComponent = () => {
   const [ratings, setRatings] = useState([0, 0, 0, 0, 0]);
 
   const regenerateRatings = () => {
-    setRatings(generatedRatings);
+    setRatings(randomRatings());
   };
 
   return (
@@ -24,17 +27,17 @@ const RatingComponent = () => {
             ))}
           </div>
           {ratings.map((rating, index) => (
-            <div 
-              key={index} 
-              className="bar" 
+            <div
+              key={index}
+              className="bar"
               style={{ height: `${rating * 5}px` }}
             >
             </div>
           ))}
         </div>
         <div className='x-axis-values'>
-          {xAxis.map((num, index) => (
-            <div key={index} className="x-axis-value">{num}</div>
+          {xAxis.map((value, index) => (
+            <div key={index} className="x-axis-value">{value}</div>
           ))}
         </div>
         <div className="x-axis-label">Rating</div>
